@@ -3,16 +3,23 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MicroLoansModule } from './pages/micro-loans/micro-loans.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {Offers} from './pages/micro-loans/services/offers';
+import {Test} from './pages/test/test';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    Test
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MicroLoansModule,
+    BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [Offers],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

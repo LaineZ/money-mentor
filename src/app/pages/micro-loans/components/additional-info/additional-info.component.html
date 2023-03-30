@@ -1,536 +1,294 @@
-<header class="header">
-  <div class="container container-header">
-    <div class="header-wrap">
-      <div class="header-logo">
-        <img src="img/logo.png" alt="">
-      </div>
-      <div class="menu-icon">
-        <span></span>
-      </div>
-      <nav class="header-nav">
-        <div class="header-nav__wrap">
-          <ul class="header-nav__list site-list">
-            <li class="menu-item"><a href="#about" class="menu-link" title="Вклады">Вклады</a></li>
-            <li class="menu-item"><a href="#researches" class="menu-link" title="Кредиты">Кредиты</a></li>
-            <li class="menu-item"><a href="#health" class="menu-link" title="Карты">Карты</a></li>
-            <li class="menu-item"><a href="#more" class="menu-link" title="Ипотека">Ипотека</a></li>
-            <li class="menu-item"><a href="#footer" class="menu-link" title="Страхование">Страхование</a></li>
-            <li class="menu-item"><a href="#about" class="menu-link" title="Инвестиции">Инвестиции</a></li>
-            <li class="menu-item"><a href="#health" class="menu-link" title="Бизнес">Бизнес</a></li>
-            <li class="menu-item"><a href="#more" class="menu-link" title="Новости">Новости</a></li>
-            <li class="menu-item"><a href="#more" class="menu-link" title="Еще...">Еще...</a></li>
-          </ul>
-        </div>
-      </nav>
-      <div class="header-right__icons">
-        <a href="#" class="header-right__icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
-            <g clip-path="url(#clip0_516_2)">
-              <path class="header-ico"
-                    d="M10.4414 0.0843684C9.27598 0.33222 8.28984 1.3289 8.04199 2.50488C7.97871 2.79492 7.96289 3.34863 7.96289 5.12577V7.38281H9.01758H10.067L10.0828 5.09941L10.0986 2.81074L10.241 2.60507C10.3201 2.49433 10.473 2.3414 10.5838 2.26757L10.7789 2.13574H17.4814H24.1893L24.3949 2.27812C24.5057 2.35722 24.6586 2.51015 24.7324 2.62089L24.8643 2.81601V13.5V24.184L24.7324 24.3791C24.6586 24.4898 24.5057 24.6428 24.3949 24.7219L24.1893 24.8643H17.4814H10.7736L10.568 24.7219C10.4572 24.6428 10.3043 24.4898 10.2305 24.3791L10.0986 24.184L10.0828 21.9006L10.067 19.6172H9.01758H7.96289V21.8689C7.96289 23.6514 7.97871 24.2051 8.04199 24.4951C8.28984 25.6816 9.28125 26.673 10.4678 26.9209C11.0215 27.0369 23.9414 27.0369 24.4951 26.9209C25.6816 26.673 26.673 25.6816 26.9209 24.4951C27.0369 23.9414 27.0369 3.05859 26.9209 2.50488C26.673 1.31835 25.6816 0.326947 24.4951 0.079095C23.9572 -0.0316472 10.9635 -0.0316472 10.4414 0.0843684Z"/>
-              <path class="header-ico"
-                    d="M11.9443 9.28125L11.2061 10.0195L12.4189 11.2324L13.6318 12.4453H6.81328H0V13.5V14.5547H6.81328H13.6318L12.4189 15.7676L11.2061 16.9805L11.9602 17.7293L12.709 18.4834L15.198 15.9891L17.6924 13.5L15.2139 11.0215C13.8533 9.66094 12.7248 8.54297 12.709 8.54297C12.6932 8.54297 12.3504 8.8752 11.9443 9.28125Z"/>
-            </g>
-            <defs>
-              <clipPath id="clip0_516_2">
-                <rect width="27" height="27" fill="white"/>
-              </clipPath>
-            </defs>
-          </svg>
-        </a>
-        <a href="#" class="header-right__icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
-            <path class="header-ico"
-                  d="M12.3715 0.944988C10.3249 1.20959 8.58071 2.04659 7.05791 3.50459C5.72951 4.77899 4.73591 6.60959 4.40111 8.38079C4.04471 10.2762 4.28771 11.7342 5.34071 14.121C6.67991 17.1396 9.36911 21.3516 12.5983 25.488C12.9169 25.8984 13.2409 26.136 13.4785 26.136C13.5487 26.136 13.7053 26.0982 13.8241 26.0496C14.0023 25.9794 14.1697 25.7904 14.8933 24.8508C18.0307 20.7468 20.4877 16.8372 21.7621 13.905C22.0969 13.1274 22.5397 11.8206 22.6261 11.3508C22.8043 10.341 22.7881 9.32039 22.5721 8.25659C22.0645 5.76179 20.4391 3.49919 18.1819 2.13839C17.3233 1.62539 16.0651 1.17719 14.9851 0.998988C14.2561 0.874788 13.0951 0.853188 12.3715 0.944988ZM14.7421 2.61899C15.4279 2.72159 16.1947 2.96459 16.8535 3.29399C18.3277 4.01759 19.6129 5.31359 20.3473 6.80939C20.9899 8.12699 21.2599 9.74699 21.0385 10.9242C20.6227 13.1112 18.6949 16.7184 15.5251 21.222C14.4667 22.7286 13.5703 23.922 13.5001 23.922C13.4191 23.922 12.1771 22.2318 11.0107 20.547C8.58071 17.037 6.94451 14.0832 6.23711 11.9556C5.94551 11.0754 5.86991 10.5678 5.90231 9.77399C5.99951 7.48979 7.12271 5.40539 9.00731 3.99599C9.94151 3.29939 11.1295 2.79179 12.2257 2.61899C12.8413 2.52179 14.0995 2.52179 14.7421 2.61899Z"/>
-            <path class="header-ico"
-                  d="M12.8791 4.91399C11.8099 5.08679 10.7569 5.68079 10.0981 6.49619C9.74175 6.93359 9.36915 7.66799 9.22875 8.19179C9.05595 8.83979 9.06675 9.80639 9.25575 10.4382C9.84435 12.4146 11.4967 13.6728 13.5001 13.6728C15.2227 13.6728 16.7401 12.7062 17.4745 11.151C17.7985 10.4544 17.8903 10.0386 17.8903 9.26099C17.8849 8.46719 17.7715 7.98119 17.4151 7.29539C16.6753 5.85899 15.2983 4.96799 13.6945 4.89239C13.4245 4.87619 13.0573 4.88699 12.8791 4.91399ZM14.1589 6.61499C14.6611 6.74459 15.0715 6.97139 15.4225 7.31699C16.5241 8.39699 16.5349 10.1358 15.4387 11.2266C14.2021 12.4632 12.2203 12.2688 11.2159 10.8108C10.4869 9.74699 10.6273 8.26199 11.5507 7.33859C12.2257 6.66899 13.2571 6.37739 14.1589 6.61499Z"/>
-          </svg>
-        </a>
-        <a href="#" class="header-right__icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
-            <path class="header-ico"
-                  d="M10.6261 2.61564C4.79366 3.40138 1.14445 9.27072 3.03761 14.8131C3.82863 17.1176 5.50031 19.0213 7.7257 20.134C9.8087 21.1729 12.3241 21.3733 14.5812 20.6666C15.5251 20.3713 16.8909 19.6488 17.587 19.0688L17.7452 18.9369L20.9093 22.0957C24.3423 25.5182 24.1735 25.3811 24.664 25.2861C24.9224 25.2387 25.2388 24.9223 25.2862 24.6639C25.3812 24.1735 25.5183 24.3422 22.0958 20.9092L18.937 17.7451L19.0689 17.5869C19.38 17.2125 19.8968 16.3793 20.1657 15.8203C21.906 12.1975 21.136 7.93654 18.2357 5.13634C16.2054 3.17463 13.3841 2.24123 10.6261 2.61564ZM13.2259 4.3506C15.0821 4.71447 16.738 5.75334 17.8771 7.26681C18.5521 8.1633 19.0056 9.17052 19.2587 10.3254C19.4116 11.0162 19.4222 12.5139 19.2851 13.1836C18.8843 15.1295 17.8823 16.7326 16.3583 17.877C15.4618 18.552 14.4546 19.0055 13.2997 19.2586C12.5614 19.4221 11.0638 19.4221 10.3255 19.2586C7.98409 18.7471 6.06456 17.2758 5.04152 15.2192C4.52999 14.1908 4.29269 13.2838 4.23995 12.1553C4.08702 8.94377 5.96437 6.01701 8.9755 4.77775C9.48702 4.56681 10.2833 4.3506 10.837 4.27677C11.3538 4.20295 12.7038 4.24513 13.2259 4.3506Z"/>
-          </svg>
-        </a>
-      </div>
-    </div>
-  </div>
-</header>
-
-<app-hero-loans></app-hero-loans>
-
-<app-offers></app-offers>
-
-<section class="reviews">
-  <div class="container">
-    <h2 class="reviews-title">Отзывы о <span>МФО</span></h2>
-    <div class="reviews-wrap">
-
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="reviews-card swiper-slide">
-            <div class="reviews-card__header">
-              <div class="reviews-card__wrap">
-                <h4 class="reviews-card__title">Не жалею что обратился</h4>
-                <div class="reviews-card__inner">
-                  <p class="reviews-card__rating--text">Оценка</p>
-                  <p class="reviews-card__rating--num">5</p>
-                  <p class="reviews-card__rating--text">Проверяется</p>
-                </div>
-              </div>
-              <div class="reviews-card__img">
-                <img src="img/reviews-logo.png" alt="" srcset="img/reviews-logo.png 2x"/>
-              </div>
-            </div>
-            <div class="reviews-card__body">
-              <p class="reviews-card__text">Запасы быстро кончились. Пришлось задуматься о кредите, но банки
-                отказывают-плохая кредитная история. Выручил Mеня</p>
-              <a href="#" class="reviews-card__more--btn">Читать далее</a>
-            </div>
-            <div class="reviews-card__footer">
-              <p class="reviews-card__date">12.01.2023</p>
-              <a href="#" class="reviews-card__offer--btn">Займы</a>
-            </div>
-          </div>
-
-          <div class="reviews-card swiper-slide">
-            <div class="reviews-card__header">
-              <div class="reviews-card__wrap">
-                <h4 class="reviews-card__title">Не жалею что обратился</h4>
-                <div class="reviews-card__inner">
-                  <p class="reviews-card__rating--text">Оценка</p>
-                  <p class="reviews-card__rating--num">5</p>
-                  <p class="reviews-card__rating--text">Проверяется</p>
-                </div>
-              </div>
-              <div class="reviews-card__img">
-                <img src="img/reviews-logo.png" alt="" srcset="img/reviews-logo.png 2x"/>
-              </div>
-            </div>
-            <div class="reviews-card__body">
-              <p class="reviews-card__text">Запасы быстро кончились. Пришлось задуматься о кредите, но банки
-                отказывают-плохая кредитная история. Выручил Mеня</p>
-              <a href="#" class="reviews-card__more--btn">Читать далее</a>
-            </div>
-            <div class="reviews-card__footer">
-              <p class="reviews-card__date">12.01.2023</p>
-              <a href="#" class="reviews-card__offer--btn">Займы</a>
-            </div>
-          </div>
-
-          <div class="reviews-card swiper-slide">
-            <div class="reviews-card__header">
-              <div class="reviews-card__wrap">
-                <h4 class="reviews-card__title">Не жалею что обратился</h4>
-                <div class="reviews-card__inner">
-                  <p class="reviews-card__rating--text">Оценка</p>
-                  <p class="reviews-card__rating--num">5</p>
-                  <p class="reviews-card__rating--text">Проверяется</p>
-                </div>
-              </div>
-              <div class="reviews-card__img">
-                <img src="img/reviews-logo.png" alt="" srcset="img/reviews-logo.png 2x"/>
-              </div>
-            </div>
-            <div class="reviews-card__body">
-              <p class="reviews-card__text">Запасы быстро кончились. Пришлось задуматься о кредите, но банки
-                отказывают-плохая кредитная история. Выручил Mеня</p>
-              <a href="#" class="reviews-card__more--btn">Читать далее</a>
-            </div>
-            <div class="reviews-card__footer">
-              <p class="reviews-card__date">12.01.2023</p>
-              <a href="#" class="reviews-card__offer--btn">Займы</a>
-            </div>
-          </div>
-
-          <div class="reviews-card swiper-slide">
-            <div class="reviews-card__header">
-              <div class="reviews-card__wrap">
-                <h4 class="reviews-card__title">Не жалею что обратился</h4>
-                <div class="reviews-card__inner">
-                  <p class="reviews-card__rating--text">Оценка</p>
-                  <p class="reviews-card__rating--num">5</p>
-                  <p class="reviews-card__rating--text">Проверяется</p>
-                </div>
-              </div>
-              <div class="reviews-card__img">
-                <img src="img/reviews-logo.png" alt="" srcset="img/reviews-logo.png 2x"/>
-              </div>
-            </div>
-            <div class="reviews-card__body">
-              <p class="reviews-card__text">Запасы быстро кончились. Пришлось задуматься о кредите, но банки
-                отказывают-плохая кредитная история. Выручил Mеня</p>
-              <a href="#" class="reviews-card__more--btn">Читать далее</a>
-            </div>
-            <div class="reviews-card__footer">
-              <p class="reviews-card__date">12.01.2023</p>
-              <a href="#" class="reviews-card__offer--btn">Займы</a>
-            </div>
-          </div>
-
-
-        </div>
-      </div>
-      <div class="reviews-button__wrap">
-        <div class="reviews-button__inner">
-          <div class="reviews-button-prev"><img src="img/svg/arrow-rev--l.svg" alt=""></div>
-          <div class="reviews-button-next"><img src="img/svg/arrow-rev--r.svg" alt=""></div>
-        </div>
-        <div class="reviews-link__inner">
-          <a href="#" class="reviews-link">Все отзывы</a>
-          <a href="#" class="reviews-link">Оставить отзыв</a>
-        </div>
-      </div>
-
-
-    </div>
-  </div>
-</section>
-
-<section class="place">
-  <div class="container">
-    <h2 class="place-title">Где можно получить займ на карту в Краснодаре</h2>
-    <div class="place-wrap">
-      <table class="place-table">
-        <thead class="place-table__head">
-        <tr>
-          <th>Банк</th>
-          <th>Эффективная ставка</th>
-          <th>Срок</th>
-          <th>Сумма</th>
-        </tr>
-        </thead>
-        <tbody class="place-table__body">
-        <tr>
-          <td>MoneyMan</td>
-          <td>0%</td>
-          <td>5 — 21 дней</td>
-          <td>1 500 ₽ — 30 000 ₽</td>
-        </tr>
-        <tr>
-          <td>Займ-Экспресс</td>
-          <td>от 0%</td>
-          <td>5 — 21 дней</td>
-          <td>1 500 ₽ — 30 000 ₽</td>
-        </tr>
-        <tr>
-          <td>МигКредит</td>
-          <td>от 0%</td>
-          <td>5 — 21 дней</td>
-          <td>1 500 ₽ — 30 000 ₽</td>
-        </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</section>
-
 <section class="more">
   <div class="container">
-    <div class="more-block">
-      <h3 class="more-block__title">Предложения</h3>
-      <svg class="more-block__arrow" width="20" height="11" viewBox="0 0 20 11" fill="none"
-           xmlns="http://www.w3.org/2000/svg">
-        <path d="M1 1L10 10L19 1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" id="more-arrow"/>
-      </svg>
-      <div class="more-block__body more-block__body--first">
-        <div class="more-block__col">
-          <a href="#" class="more-block__link">До зарплаты</a>
-          <a href="#" class="more-block__link">В долг</a>
-          <a href="#" class="more-block__link">Беспроцентный займ</a>
-          <a href="#" class="more-block__link">Через интернет</a>
-          <a href="#" class="more-block__link">На карту Сбербанка</a>
-          <a href="#" class="more-block__link">Под 0 процентов</a>
-          <a href="#" class="more-block__link">100 000 рублей</a>
-          <a href="#" class="more-block__link">с 18 лет на карту</a>
-        </div>
-        <div class="more-block__col">
-          <a href="#" class="more-block__link">До зарплаты</a>
-          <a href="#" class="more-block__link">В долг</a>
-          <a href="#" class="more-block__link">Беспроцентный займ</a>
-          <a href="#" class="more-block__link">Через интернет</a>
-          <a href="#" class="more-block__link">На карту Сбербанка</a>
-          <a href="#" class="more-block__link">Под 0 процентов</a>
-          <a href="#" class="more-block__link">100 000 рублей</a>
-          <a href="#" class="more-block__link">с 18 лет на карту</a>
-        </div>
-        <div class="more-block__col">
-          <a href="#" class="more-block__link">До зарплаты</a>
-          <a href="#" class="more-block__link">В долг</a>
-          <a href="#" class="more-block__link">Беспроцентный займ</a>
-          <a href="#" class="more-block__link">Через интернет</a>
-          <a href="#" class="more-block__link">На карту Сбербанка</a>
-          <a href="#" class="more-block__link">Под 0 процентов</a>
-          <a href="#" class="more-block__link">100 000 рублей</a>
-          <a href="#" class="more-block__link">с 18 лет на карту</a>
-        </div>
-        <div class="more-block__col">
-          <a href="#" class="more-block__link">До зарплаты</a>
-          <a href="#" class="more-block__link">В долг</a>
-          <a href="#" class="more-block__link">Беспроцентный займ</a>
-          <a href="#" class="more-block__link">Через интернет</a>
-          <a href="#" class="more-block__link">На карту Сбербанка</a>
-          <a href="#" class="more-block__link">Под 0 процентов</a>
-          <a href="#" class="more-block__link">100 000 рублей</a>
-          <a href="#" class="more-block__link">с 18 лет на карту</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="more-block">
-      <h3 class="more-block__title">Читать дальше</h3>
-      <svg class="more-block__arrow" width="20" height="11" viewBox="0 0 20 11" fill="none"
-           xmlns="http://www.w3.org/2000/svg">
-        <path d="M1 1L10 10L19 1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" id="more-arrow"/>
-      </svg>
-      <div class="more-block__body more-block__body--col">
-        <p class="more-block__text">Банковская карта сегодня имеется почти у каждого россиянина, и это упрощает решение
-          многих финансовых проблем и вопросов. Чтобы справиться с внезапными трудностями, можно обратиться
-          в микрофинансовую организацию и взять займ на карту. Такая операция выполняется за несколько минут
-          и не требует тщательной проверки кредитной истории. МФО примет заявку на экспресс-займ на карту, обработает
-          ее в короткий срок и выдаст денежные средства любым удобным для заемщика способом.</p>
-        <h4 class="more-block__body--title">Как получить займ на карту?</h4>
-        <p class="more-block__text">Чтобы получить займ на карту, нужно:</p>
-        <ul class="margin-block__body--list">
-          <li class="margin-block__body--item">
-            <p>Оформить заявку — при этом указываются паспортные данные, контактная информация и другие сведения,
-              которые нужны микрофинансовой организации, в том числе номер банковской карты;</p>
-          </li>
-          <li class="margin-block__body--item">
-            <p>Дождаться, пока ее рассмотрят, — это происходит в автоматическом режиме и обычно занимает 15-20
-              минут.</p>
-          </li>
-        </ul>
-        <p class="more-block__text">Деньги будут переведены после рассмотрения заявки.</p>
-        <h4 class="more-block__body--title">Основные значения займа на карту</h4>
-        <div class="more-block__body--wrap">
-          <div class="more-block__body--row">
-            <p class="more-block__text">Минимальная ставка займа онлайн:</p>
-            <p class="more-block__text">0%</p>
-          </div>
-          <div class="more-block__body--row">
-            <p class="more-block__text">Минимальная сумма онлайн займа:</p>
-            <p class="more-block__text">100 ₽</p>
-          </div>
-          <div class="more-block__body--row">
-            <p class="more-block__text">Максимальная сумма займа онлайн:</p>
-            <p class="more-block__text">15000000 ₽</p>
-          </div>
-          <div class="more-block__body--row">
-            <p class="more-block__text">Максимальный срок онлайн займа:</p>
-            <p class="more-block__text">2554 дня</p>
-          </div>
-        </div>
-        <div class="more-block__body--inner">
-          <p class="more-block__body--date">Публикация: 02.04.2018</p>
-          <p class="more-block__body--date">Изменено: 14.11.2022</p>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="more-block">
-      <h3 class="more-block__title">По виду</h3>
-      <svg class="more-block__arrow" width="20" height="11" viewBox="0 0 20 11" fill="none"
-           xmlns="http://www.w3.org/2000/svg">
-        <path d="M1 1L10 10L19 1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" id="more-arrow"/>
-      </svg>
-      <div class="more-block__body">
-
-      </div>
-    </div>
-
-    <div class="more-block">
-      <h3 class="more-block__title">Эксперты направления микрозаймов</h3>
-      <svg class="more-block__arrow" width="20" height="11" viewBox="0 0 20 11" fill="none"
-           xmlns="http://www.w3.org/2000/svg">
-        <path d="M1 1L10 10L19 1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" id="more-arrow"/>
-      </svg>
-      <div class="more-block__body more-block__body--expert">
-        <div class="expert-card">
-          <div class="expert-card__img">
-            <img src="img/expert-photo.png" alt="">
-          </div>
-          <div class="expert-card__inner">
-            <p class="expert-card__name">Юлия Лищенко</p>
-            <p class="expert-card__post">Автор статей Банки.ру</p>
-          </div>
-        </div>
-        <div class="expert-card">
-          <div class="expert-card__img">
-            <img src="img/expert-photo.png" alt="">
-          </div>
-          <div class="expert-card__inner">
-            <p class="expert-card__name">Юлия Лищенко</p>
-            <p class="expert-card__post">Автор статей Банки.ру</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="more-block">
-      <h3 class="more-block__title">Задать вопрос о микрозаймах</h3>
-      <svg class="more-block__arrow" width="20" height="11" viewBox="0 0 20 11" fill="none"
-           xmlns="http://www.w3.org/2000/svg">
-        <path d="M1 1L10 10L19 1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" id="more-arrow"/>
-      </svg>
-      <div class="more-block__body">
-        <div class="expert-card expert-card--bg">
-          <div class="expert-card__img">
-            <img src="img/expert-photo.png" alt="">
-          </div>
-          <div class="expert-card__inner">
-            <p class="expert-card__name">Ольга Станчак</p>
-            <p class="expert-card__post">эксперт по карточным продуктам и МФО в Банки.ру</p>
-          </div>
-          <div class="expert-card__inner--btn">
-            <a href="#" class="expert-cart__btn">Читать ответы</a>
-            <a href="#" class="expert-cart__btn">Задать вопрос</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="more-aside">
-      <p class="more-aside__text">Сайт Banki.ru бесплатно предоставляет пользователям информацию о микрозаймах.
-        Процентные ставки и срок погашения займа индивидуальны, зависят от выбранной организации и могут составлять от
-        0% до 1% в день (365% годовых), срок от 1 дня до 1825 дней.</p>
-      <p class="more-aside__text">Пример расчета: займ 10 000 руб., срок пользования 12 недель под 0.83% в день;
-        проценты за весь период составят 4 164.52 руб. Итого к выплате 14 164.52 рублей.<br>Администратор сайта ООО
-        «Информационное агентство «Банки.ру».</p>
-      <p class="more-aside__text">Адрес: 117638, г. Москва, улица Одесская, д. 2, этаж 19.<br>Все предложения,
-        отображенные на данной странице, являются лучшими или выгодными исключительно по мнению экспертов Банки.ру</p>
-      <p class="more-aside__date">Обновлено 13.01.2023</p>
-    </div>
-
-  </div>
-</section>
-
-<section class="calc">
-  <div class="container">
-    <h2 class="calc-title">Где можно получить займ на карту в Краснодаре</h2>
-    <div class="calc-wrap">
-
-      <div class="calc-col">
-        <div class="calc-col__title">Калькуляторы</div>
-        <a href="#" class="calc-col__link">Калькулятор ВЗР</a>
-        <a href="#" class="calc-col__link">Рассчитать ОСАГО</a>
-        <a href="#" class="calc-col__link">Рассчитать КАСКО</a>
-        <a href="#" class="calc-col__link">Калькулятор ипотечного страхования</a>
-        <a href="#" class="calc-col__link">Калькулятор вкладов</a>
-        <a href="#" class="calc-col__link">Калькулятор кредитов</a>
-        <a href="#" class="calc-col__link">Калькулятор ипотеки</a>
-        <a href="#" class="calc-col__link">Калькулятор автокредитов</a>
-      </div>
-      <div class="calc-col">
-        <div class="calc-col__title">Вклады и инвестиции</div>
-        <a href="#" class="calc-col__link">Калькулятор ВЗР</a>
-        <a href="#" class="calc-col__link">Рассчитать ОСАГО</a>
-        <a href="#" class="calc-col__link">Рассчитать КАСКО</a>
-        <a href="#" class="calc-col__link">Калькулятор ипотечного страхования</a>
-        <a href="#" class="calc-col__link">Калькулятор вкладов</a>
-        <a href="#" class="calc-col__link">Калькулятор кредитов</a>
-        <a href="#" class="calc-col__link">Калькулятор ипотеки</a>
-        <a href="#" class="calc-col__link">Калькулятор автокредитов</a>
-      </div>
-      <div class="calc-col">
-        <div class="calc-col__title">Кредиты и займы</div>
-        <a href="#" class="calc-col__link">Калькулятор ВЗР</a>
-        <a href="#" class="calc-col__link">Рассчитать ОСАГО</a>
-        <a href="#" class="calc-col__link">Рассчитать КАСКО</a>
-        <a href="#" class="calc-col__link">Калькулятор ипотечного страхования</a>
-        <a href="#" class="calc-col__link">Калькулятор вкладов</a>
-        <a href="#" class="calc-col__link">Калькулятор кредитов</a>
-        <a href="#" class="calc-col__link">Калькулятор ипотеки</a>
-        <a href="#" class="calc-col__link">Калькулятор автокредитов</a>
-      </div>
-      <div class="calc-col">
-        <div class="calc-col__title">Ещё</div>
-        <a href="#" class="calc-col__link">Калькулятор ВЗР</a>
-        <a href="#" class="calc-col__link">Рассчитать ОСАГО</a>
-        <a href="#" class="calc-col__link">Рассчитать КАСКО</a>
-        <a href="#" class="calc-col__link">Калькулятор ипотечного страхования</a>
-        <a href="#" class="calc-col__link">Калькулятор вкладов</a>
-        <a href="#" class="calc-col__link">Калькулятор кредитов</a>
-        <a href="#" class="calc-col__link">Калькулятор ипотеки</a>
-        <a href="#" class="calc-col__link">Калькулятор автокредитов</a>
-      </div>
-    </div>
-    <div class="calc-btn--wrap"><a href="#" class="calc-btn__more">Показать еще<img src="img/svg/arrow.svg" alt=""></a>
-    </div>
-
-  </div>
-</section>
-
-<footer class="footer">
-  <div class="container">
-    <div class="footer-top">
-      <div class="footer-logo">
-        <img src="img/logo.png" alt="">
-      </div>
-      <h2 class="footer-title">самый большой финансовый маркетплейс в россии*</h2>
-      <div class="footer-right__icons">
-        <a href="#" class="footer-right__icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
-            <path class="footer-ico"
-                  d="M23.0166 3.39068C20.2275 3.89654 18.0195 5.93365 17.2881 8.69537C17.1582 9.16705 17.1309 9.44732 17.1309 10.3907C17.124 11.0127 17.1445 11.6485 17.1787 11.8126L17.2266 12.1133L16.7686 12.0655C13.7539 11.792 11.3203 11.1016 8.89356 9.83697C6.65137 8.66802 4.32031 6.82916 2.8916 5.11334C2.67285 4.85357 2.46777 4.65533 2.43359 4.669C2.39258 4.68267 2.24902 4.95611 2.10547 5.28423C1.12109 7.50591 1.30566 10.0694 2.58398 12.0655C2.95996 12.6465 3.5752 13.337 4.07422 13.7335L4.58691 14.1504H4.30664C3.70508 14.1504 2.4541 13.8086 1.77734 13.4669C1.63379 13.3917 1.4834 13.3301 1.45605 13.3301C1.36035 13.3301 1.4834 14.5811 1.64063 15.1827C2.2627 17.5411 4.0127 19.4073 6.34375 20.1866C6.72656 20.3165 7 20.4395 6.94531 20.46C6.6377 20.5762 5.62598 20.6583 4.83984 20.6309L3.95117 20.5899L3.99902 20.7676C4.07422 21.0684 4.58008 22.0254 4.89453 22.4629C6.09766 24.1583 8.07324 25.3204 10.001 25.4776C10.2881 25.4981 10.5273 25.5391 10.5273 25.5733C10.5273 25.6827 8.99609 26.6329 8.05957 27.0977C5.92676 28.1573 3.81445 28.6153 1.33301 28.5606L0.0683594 28.5333L0.423828 28.7588C0.950195 29.087 2.53613 29.8868 3.24707 30.1807C7.08203 31.7735 11.5596 32.1358 15.7842 31.1993C21.998 29.8184 27.1182 25.4981 29.7022 19.4483C30.8027 16.8643 31.3564 14.3213 31.418 11.587L31.4385 10.3565L31.9375 9.96002C32.5664 9.44732 33.2773 8.77056 33.8174 8.169C34.2754 7.64947 34.9453 6.75396 34.9043 6.71978C34.8906 6.70611 34.6855 6.77447 34.4463 6.87017C33.5371 7.23931 31.4385 7.77252 31.124 7.71099C31.0488 7.69732 31.1035 7.62896 31.3018 7.49908C31.8213 7.15728 32.7441 6.20709 33.1338 5.61919C33.4756 5.11334 33.9746 4.10845 33.9746 3.93072C33.9746 3.8897 33.5576 4.06744 33.0449 4.32037C32.1152 4.77154 30.9053 5.20904 29.9619 5.43462L29.4629 5.55084L29.0459 5.16802C27.4463 3.68462 25.1426 3.00787 23.0166 3.39068Z"/>
-          </svg>
-        </a>
-        <a href="#" class="footer-right__icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
-            <path class="footer-ico"
-                  d="M14.6631 7.56033C14 7.60818 13.1524 7.73806 12.8174 7.8406C12.2364 8.01834 11.5186 8.66091 11.6485 8.87966C11.6758 8.91384 11.8057 8.96853 11.9492 8.99587C12.5782 9.11209 13.1045 9.46755 13.3438 9.9324C13.7471 10.7254 13.9317 13.2136 13.7129 14.9705C13.5694 16.1326 13.5078 16.3992 13.2891 16.823C12.7217 17.9578 11.4024 17.0418 9.95315 14.4988C9.43362 13.5965 7.9844 10.698 7.66311 9.92556C7.26663 8.98904 7.14358 8.81814 6.69925 8.59255L6.32327 8.40115L3.48636 8.42166C0.922879 8.44216 0.628933 8.45584 0.430691 8.56521C0.109402 8.73611 -0.0273166 8.97537 0.0205349 9.28298C0.0615506 9.61111 1.13479 12.0037 1.92776 13.5349C3.47268 16.5154 4.78518 18.6824 6.17971 20.576C8.23733 23.3582 9.14651 24.2605 11.2451 25.6004C12.2227 26.2293 12.9336 26.5779 13.8086 26.8719C15.0117 27.2752 15.5313 27.3504 17.3291 27.3914C19.1133 27.4324 19.626 27.3777 20.0088 27.1179C20.3164 26.906 20.4121 26.6121 20.4737 25.7029C20.5283 24.8006 20.7061 24.0281 20.9453 23.6179C21.1641 23.2556 21.6221 22.8318 21.8272 22.825C22.5176 22.7908 22.9073 23.0779 24.3565 24.7049C25.7168 26.2293 26.2158 26.6736 26.9678 27.0359C27.3096 27.1931 27.7198 27.3572 27.8907 27.3982C28.3008 27.4939 33.8379 27.3845 34.1934 27.282C34.5489 27.1726 34.9317 26.7967 34.9385 26.5506C34.9659 25.8738 34.8633 25.5662 34.3916 24.8484C33.7627 23.9051 33.2295 23.3035 31.4043 21.4988C29.4629 19.5779 29.333 19.4002 29.3262 18.7576C29.3262 18.2176 29.5791 17.8074 31.2813 15.5515C33.6807 12.3728 34.6377 10.8347 34.9043 9.75466C35.0616 9.11892 34.9727 8.8113 34.5694 8.59255L34.2823 8.44216L30.8301 8.46267C28.3897 8.48318 27.3301 8.51052 27.2071 8.56521C26.9746 8.67459 26.7354 9.07791 26.4278 9.84353C25.6075 11.8875 23.919 14.8338 22.8047 16.1599C22.3604 16.6863 21.67 17.2263 21.4444 17.2263C21.1231 17.2263 20.8565 17.0213 20.6582 16.6111L20.4737 16.2351L20.4942 12.6873C20.5147 8.86599 20.501 8.75662 20.1524 8.25076C19.8037 7.75857 18.9561 7.58767 16.6797 7.55349C15.7569 7.54666 14.8545 7.54666 14.6631 7.56033Z"/>
-          </svg>
-        </a>
-        <a href="#" class="footer-right__icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
-            <path class="footer-ico"
-                  d="M32.6074 3.10329C30.2832 3.95778 1.60642 14.9705 1.18259 15.1756C-0.218779 15.8386 -0.382842 16.7136 0.786103 17.3084C0.902314 17.3699 2.83688 17.9851 5.09958 18.6892L9.20798 19.9675L18.5322 14.1297C23.666 10.9236 27.9658 8.25759 28.0888 8.21657C28.4101 8.1072 28.6836 8.11403 28.8066 8.24391C28.8955 8.33278 28.9023 8.3738 28.8271 8.50368C28.7861 8.59255 25.375 11.6892 21.2597 15.3806C17.1445 19.0789 13.7607 22.1277 13.747 22.1619C13.7334 22.1961 13.5967 24.0418 13.4394 26.2634L13.1523 30.2966L13.4668 30.2556C13.6377 30.2351 13.9043 30.1463 14.0615 30.0574C14.2256 29.9754 15.292 29.0047 16.4472 27.9041C17.5957 26.8035 18.5801 25.8806 18.6279 25.867C18.6758 25.8465 20.5078 27.1453 22.7021 28.7517C24.8896 30.3582 26.8515 31.7459 27.0634 31.8416C27.6172 32.1013 28.2324 32.1218 28.6357 31.9099C28.998 31.7185 29.3467 31.24 29.497 30.741C29.5517 30.5496 30.8095 24.7595 32.2793 17.8757C34.7334 6.41872 34.959 5.3113 34.959 4.71657C34.959 4.15602 34.9384 4.01931 34.7881 3.72536C34.6855 3.51345 34.5009 3.30153 34.3232 3.17849C33.9199 2.89821 33.25 2.86403 32.6074 3.10329Z"/>
-          </svg>
-        </a>
-        <a href="#" class="footer-right__icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
-            <path class="footer-ico"
-                  d="M16.4745 0.0478792C14.41 0.266629 12.3456 1.25784 10.8759 2.72757C9.58388 4.02639 8.78407 5.51663 8.4286 7.30081C8.24403 8.23733 8.27138 9.74124 8.49696 10.7051C8.88661 12.4004 9.67274 13.8018 10.9374 15.0459C12.2089 16.2969 13.8222 17.1377 15.7294 17.5479C16.6249 17.7393 18.4706 17.7188 19.4071 17.5137C21.3212 17.083 22.8456 16.2627 24.1308 14.9707C25.4159 13.6787 26.2294 12.1612 26.5643 10.4043C26.7079 9.67288 26.7284 8.17581 26.5985 7.4512C25.9901 3.99905 23.3378 1.18948 19.8583 0.307645C18.8192 0.0410433 17.4794 -0.0614958 16.4745 0.0478792ZM18.6347 4.63479C20.5897 5.15432 21.8817 6.69925 21.9911 8.64749C22.039 9.47464 21.9296 9.96682 21.5263 10.794C21.0409 11.7783 20.0634 12.6123 18.9354 12.9883C18.3202 13.2002 17.1034 13.2481 16.4403 13.0977C15.4901 12.8721 14.4989 12.25 13.9179 11.5117C12.1884 9.30374 12.9472 6.17288 15.5106 4.94925C15.7909 4.81936 16.1874 4.66897 16.3993 4.61429C16.9735 4.47757 18.0673 4.4844 18.6347 4.63479Z"/>
-            <path class="footer-ico"
-                  d="M8.16209 17.7119C7.82713 17.8076 7.3076 18.1836 7.06151 18.5117C6.93846 18.6758 6.7744 19.0244 6.69237 19.291C6.51463 19.8721 6.54881 20.3164 6.79491 20.7402C7.28709 21.5811 9.31737 22.9688 10.999 23.6182C12.0654 24.0352 14.0752 24.4863 15.4697 24.623C15.5723 24.6367 15.6611 24.6709 15.6611 24.6982C15.6611 24.7256 14.0752 26.2773 12.1406 28.1367C8.22362 31.9033 8.27147 31.8486 8.27147 32.6758C8.27147 33.2568 8.53807 33.8174 9.03026 34.2822C9.53612 34.7539 10.0283 34.959 10.664 34.959C11.5049 34.9658 11.6211 34.877 14.7656 31.835L17.5068 29.1758L17.999 29.6406C18.2724 29.9004 19.5371 31.124 20.8154 32.3545C22.374 33.8652 23.249 34.665 23.4814 34.7812C23.7685 34.9316 23.9121 34.9658 24.3701 34.9658C24.8555 34.9658 24.9717 34.9385 25.375 34.7402C26.5644 34.1592 27.1045 32.8945 26.5918 31.8828C26.4209 31.5342 25.9424 31.0488 22.873 28.1025C20.9316 26.25 19.3662 24.7051 19.3867 24.6709C19.4072 24.6367 19.5234 24.6094 19.6396 24.6094C20.3711 24.6094 22.7773 24.0762 23.8437 23.6797C25.2656 23.1465 26.8174 22.2031 27.6924 21.3281C28.4717 20.5557 28.5947 20.0293 28.2324 19.0586C27.9385 18.2588 27.2139 17.7119 26.3799 17.6504C25.7099 17.6025 25.1494 17.7939 24.3017 18.3613C20.289 21.0342 14.7314 21.0342 10.7051 18.3613C9.7412 17.7188 8.8867 17.5 8.16209 17.7119Z"/>
-          </svg>
-        </a>
-      </div>
-    </div>
-
-    <div class="footer-menu">
-      <ul class="footer-menu__list">
-        <li class="footer-menu__item"><a href="#" class="footer-menu__link">О проекте</a></li>
-        <li class="footer-menu__item"><a href="#" class="footer-menu__link">Как это работает</a></li>
-        <li class="footer-menu__item"><a href="#" class="footer-menu__link">Наши награды</a></li>
-        <li class="footer-menu__item"><a href="#" class="footer-menu__link">Отзывы о Банки.ру</a></li>
-        <li class="footer-menu__item"><a href="#" class="footer-menu__link">Работа в Банки.ру</a></li>
-        <li class="footer-menu__item"><a href="#" class="footer-menu__link">Реклама</a></li>
-        <li class="footer-menu__item"><a href="#" class="footer-menu__link">Контакты</a></li>
-        <li class="footer-menu__item"><a href="#" class="footer-menu__link">Партнерская программа</a></li>
-        <li class="footer-menu__item"><a href="#" class="footer-menu__link">Служба поддержки</a></li>
-        <li class="footer-menu__item"><a href="#" class="footer-menu__link">Карта сайта</a></li>
+    <mat-expansion-panel #panel [expanded]="true" (expandedChange)="checkExpand($event)" class="more-block"
+                         [ngClass]="{'first-div': panel.expanded}">
+      <mat-expansion-panel-header class="mat-expansion-panel-header-title">
+        <mat-panel-title class="mat-title">
+          <h2 class="panel-header">Быстрые займы на карту</h2>
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <p class="main-paragraph">
+        Сегодня мы все реже пользуемся наличностью и все чаще банковской карточкой. Расплатиться ей можно практически в
+        любом магазине, развлекательном центре, на автозаправке и в других местах. Однако бывает такое, что денег на
+        карте нет, но в ближайшее время предстоят затраты. Здесь на помощь могут прийти микрофинансовые организации,
+        которые готовы предоставить быстрые займы. Они быстро проверяют ваши персональные данные, и необходимые средства
+        переводятся прямо на карту или выдаются наличными. Это очень удобно, а главное, оперативно.
+      </p>
+      <h3 class="paragraph-header">
+        Займ прямо на карту
+      </h3>
+      <p class="simple-paragraph">На сегодняшний день, такая услуга предоставляется практически всеми микрофинансовыми
+        организациями. Перевод
+        осуществляется на указанную клиентом карту сразу после проверки. Удобство состоит в том, что вам не нужно никуда
+        ехать, ведь оставить заявку и получить средства можно дистанционно через интернет.</p>
+      <h3 class="paragraph-header">Как получить займ на свою банковскую карту?</h3>
+      <p class="simple-paragraph">Для этого достаточно:</p>
+      <ul>
+        <li>Отправить в микрофинансовую организацию соответствующую заявку. Здесь потребуется указать свои паспортные
+          данные, размер необходимого займа, номер банковской карты (куда будет выполнен перевод) и свои контактные
+          данные для обратной связи.
+        </li>
+        <li>Дождаться рассмотрения заявки. Обычно на это уходит не более 10-20 минут.</li>
+        <li>При положительном решении, получить деньги на указанную ранее карту.</li>
       </ul>
-    </div>
-    <div class="footer-bottom">
-      <div class="footer-wrap">
-        <p class="footer-cookie">ООО ИА «Банки.ру» использует файлы cookie для повышения удобства пользователей и
-          обеспечения должного уровня работоспособности сайта и сервисов. Cookie называются небольшие файлы, содержащие
-          информацию о настройках и предыдущих посещениях веб-сайта. Если вы не хотите использовать файлы cookie, то
-          можете изменить настройки браузера. Условия использования смотрите здесь.</p>
-        <p class="foore-aside">*На основании исследований ИОМ "Анкетолог", Tiburon Research, август 2022 года</p>
-      </div>
-      <div class="footer-wrap">
-        <p class="footer-copyright">© 2005—2023 ИА «Банки.ру». При использовании материалов гиперссылка на Banki.ru
-          обязательна.</p>
-        <p class="footer-trademark">Свидетельство на товарный знак № 445945 от 18.10.2011г.</p>
-        <div class="footer-inner">
-          <a href="#" class="footer-policy__link">Пользовательское соглашение</a>
-          <a href="#" class="footer-policy__link">Политика обработки персональных данных</a>
-        </div>
-      </div>
-    </div>
+      <h3 class="paragraph-header">
+        В каких микрофинансовых организациях можно получить займ?
+      </h3>
+      <p class="simple-paragraph">Сегодня наиболее известны:</p>
+      <ul>
+        <li>
+          Займер
+        </li>
+        <li>
+          Деньги на дом
+        </li>
+        <li>
+          Webbankir
+        </li>
+        <li>
+          Займ-Экспресс
+        </li>
+        <li>
+          Лайм-Займ
+        </li>
+        <li>
+          МигКредит
+        </li>
+        <li>
+          MoneyMan
+        </li>
+        <li>
+          Отличные наличные
+        </li>
+        <li>
+          А ДЕНЬГИ и др.
+        </li>
+      </ul>
+      <p class="simple-paragraph">Их преимущества состоят в том, что имеется возможность взять кредит со ставкой от 0%
+        годовых. К тому же, новым
+        клиентам часто предоставляются всевозможные бонусы.</p>
+
+
+      <h3 class="paragraph-header">Плюсы получения займа на банковскую карту</h3>
+      <p class="simple-paragraph">К микрокредитованию необходимо относиться серьезно и внимательно познакомиться с его
+        сильными и слабыми
+        сторонами. Если говорить о преимуществах, то стоит отметить:
+      </p>
+      <ul>
+        <li>
+          Быстрая проверка заявки и вынесение решения. Менее чем через 20 минут, вы получите ответ, который в
+          большинстве случаев положительный.
+        </li>
+        <li>
+          Деньги поступят на банковскую карту сразу после одобрения.
+        </li>
+        <li>
+          Необязательно посещать отделение микрофинансовой организации. Достаточно просто оставить заявку через сайт.
+          Все, что от вас требуется – это интернет и банковская карта для получения займа.
+        </li>
+        <li>
+          Гибкие условия кредитования. Сделка максимально прозрачная и не содержит подводных камней. Вы заранее будете
+          знать сроки выплат и размер переплаты.
+        </li>
+        <li>
+          Хорошая возможность улучшить свою кредитную историю.
+        </li>
+        <li>
+          Для подачи заявки и оформления займа, нужен только паспорт.
+        </li>
+        <li>
+          Не требуется вносить залог и искать поручителей.
+        </li>
+        <li>
+          Анкету можно заполнить всего за несколько минут.
+        </li>
+        <li>
+          Понятная схема погашения задолженности. Особенно это касается краткосрочных займов, где погашение
+          осуществляется одним платежом.
+        </li>
+      </ul>
+    </mat-expansion-panel>
+    <mat-expansion-panel #panel1 [expanded]="false" (expandedChange)="checkExpand($event)" class="more-block"
+                         [ngClass]="{'first-div': panel1.expanded}">
+      <mat-expansion-panel-header class="mat-expansion-panel-header-title">
+        <mat-panel-title class="mat-title">
+          <h2 class="paragraph-header">Что такое займ?</h2>
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+
+      <p class="simple-paragraph">Быстрый займ на банковскую карту – это своего рода кредит, который выдается
+        микрофинансовой организацией, а не
+        банком. Именно поэтому получить его значительно проще. Требования к заемщикам у МФО не столь строгие, поэтому и
+        процент отказов минимальный. Сами же средства могут быть перечислены не только на банковскую карту, но и на
+        банковские счета, электронные кошельки или платежные системы.</p>
+      <p class="simple-paragraph">Сходство с банковским кредитом заключается в том, что вам будут начисляться проценты
+        за пользование средствами,
+        и необходимо будет вносить платежи по установленному графику. Также составляется договор, в котором прописаны
+        все важные моменты. Если заемщик своевременно не вносит установленные платежи, то может образоваться
+        неустойка.</p>
+      <p class="simple-paragraph">Чем отличаются займы на банковскую карту от банковских кредитов?</p>
+      <ul>
+        <li>Большое количество различных предложений, поэтому подобрать оптимальное не составит особого труда.</li>
+        <li>Низкая вероятность отказа. Даже если кредитная история сильно подпорчена, человек все равно имеет
+          возможность получить необходимый займ. Банки же очень строго следят за историей и гарантированно откажут, если
+          ранее имелись просрочки.
+        </li>
+        <li>
+          Возможность взять небольшую сумму на короткий промежуток времени. Это очень удобно, когда деньги нужны до
+          зарплаты и т.п.
+        </li>
+        <li>
+          Дистанционное оформление займа. Достаточно зайти на сайт МФО, выбрать подходящий вариант займа и оформить
+          заявку. Уже через 15-20 минут поступит решение. Если оно положительное, то деньги сразу же направят на вашу
+          банковскую карту. Это быстро и не нужно никуда ездить, как в случае с банками.
+        </li>
+      </ul>
+      <p class="simple-paragraph">
+        Сегодня микрофинансовые организации контролируются Центробанком РФ. По этой причине их работа должна
+        соответствовать всем нормам законодательства в части кредитования физических и юридических лиц. Для клиентов это
+        означает, что они не будут обмануты и кредит будет выдан на честных и прозрачных условиях. При этом, Центральный
+        Банк готов будет встать на защиту клиента, если возникнет такая необходимость. Благодаря такому контролю со
+        стороны государства, на рынке практически не осталось «черных» кредиторов.
+      </p>
+      <h3 class="paragraph-header">Где получить займ на банковскую карту?</h3>
+      <p class="simple-paragraph">Подобные услуги предоставляют следующие МФО:</p>
+      <ul>
+        <li>
+          Быстроденьги
+        </li>
+        <li>
+          Турбозайм
+        </li>
+        <li>
+          Отличные наличные
+        </li>
+        <li>
+          Webbankir
+        </li>
+        <li>
+          BelkaCredit
+        </li>
+        <li>
+          Credit7
+        </li>
+        <li>
+          Mobicredit
+        </li>
+      </ul>
+      <p class="simple-paragraph">
+        Ставка при этом начинается от 0% и нет необходимости посещать офис, так как заявку можно подать дистанционно.
+      </p>
+    </mat-expansion-panel>
+    <mat-expansion-panel #panel2 [expanded]="false" (expandedChange)="checkExpand($event)" class="more-block"
+                         [ngClass]="{'first-div': panel2.expanded}">
+      <mat-expansion-panel-header class="mat-expansion-panel-header-title">
+        <mat-panel-title class="mat-title">
+          <h2 class="paragraph-header">Какие имеются условия?</h2>
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+
+      <p class="simple-paragraph">
+        Займ небольшой суммой на банковскую карту – это краткосрочный кредит. Поэтому финансовой организации особо не
+        интересно, на какие цели вы его оформляете. В большинстве случаев, люди прибегают к подобной услуге, если деньги
+        закончились, а до зарплаты еще несколько дней. Таким образом, займ позволяет решить небольшие финансовые
+        проблемы. Вот какие условия действуют для получения займа:
+      </p>
+      <ul>
+        <li>Сумма не превышает 30 000 рублей</li>
+        <li>Срок кредитования от 1 до 30 дней</li>
+        <li>Ставка не более 1%</li>
+      </ul>
+      <p class="simple-paragraph">В данном случае, задолженность погашается полностью одним платежом. Он будет состоять
+        из взятой суммы и
+        начисленных за пользование процентов. На таких тарифах часто действует и определенный беспроцентный период, что
+        делает их весьма популярными среди населения. Но стоит учитывать, что при первом займе вам едва ли выдадут более
+        15 000 рублей. А вот в дальнейшем для порядочных и пунктуальных клиентов, сумма может быть увеличена.</p>
+      <p class="simple-paragraph">Также можно подать заявку и на долгосрочный займ. Его сроки могут составлять до 5 лет.
+        Здесь уже можно
+        рассчитывать на более крупную сумму, но и требования к заемщику будут несколько строже. Условия в большинстве
+        случаев следующие:</p>
+      <ul>
+        <li>Сумма не превышает 1 млн. рублей, при этом может потребоваться залог. Если клиент обращается впервые, то
+          может рассчитывать на 50-80 тысяч.
+        </li>
+        <li>Срок кредитования до нескольких лет. Платить необходимо по сформированному графику (раз в 2 недели или раз в
+          месяц).
+        </li>
+      </ul>
+      <p class="simple-paragraph">Очевидно, что долгосрочные тарифы куда более выгодные с точки зрения получаемой суммы
+        и начисляемых процентов.
+        Поэтому для получения такого займа, нужно иметь хорошую кредитную историю.</p>
+      <p class="simple-paragraph">Теперь, что касается процентов. У микрофинансовых организаций они выше, чем в
+        большинстве банков. Если раньше
+        МФО могли выдавать займы под 1,5-2,5%, то со временем такие ставки запретили и ограничили их 1%. Это было
+        сделано по инициативе Центробанка России, в целях обезопасить граждан от кабальных условий.
+      </p>
+      <p class="simple-paragraph">Иногда МФО выдает займ на банковскую карту вообще без процентов. Не стоит сразу
+        думать, что это мошенничество.
+        Вероятнее всего компания просто проводит акцию по привлечению клиентов и предлагает воспользоваться льготными
+        условиями по кредитованию.
+      </p>
+      <p class="simple-paragraph">Вот особенности беспроцентных займов на банковскую карту:</p>
+      <ul>
+        <li>Предложение обычно действует для тех, кто берет займ впервые</li>
+        <li>Сумма ограничена (как правило, это не более 10 000 рублей)</li>
+        <li>В случае несвоевременного возврата долга, начинают начисляться проценты</li>
+      </ul>
+    </mat-expansion-panel>
+    <mat-expansion-panel #panel3 [expanded]="false" (expandedChange)="checkExpand($event)" class="more-block"
+                         [ngClass]="{'first-div': panel3.expanded}">
+      <mat-expansion-panel-header class="mat-expansion-panel-header-title">
+        <mat-panel-title class="mat-title">
+          <h2 class="paragraph-header">Как получить деньги на карту?</h2>
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+
+      <p class="simple-paragraph">Займ может быть перечислен на карту любого российского банка, вне зависимости от того
+        дебетовая она или
+        кредитная. Но есть и определенные условия: карта должна быть именной и принадлежать заемщику.
+      </p>
+      <p class="simple-paragraph">
+        Чаще всего, банковские карты работают с платежными системами MasterCard, Visa и МИР. Вне зависимости от того,
+        какая у заемщика банковская карта, она в любом случае будет предварительно проверена. Для этого на стадии подачи
+        заявки, необходимо указать данные карты.
+      </p>
+      <p class="simple-paragraph">Если же банковской карты не имеется, то можно осуществить перевод средств на
+        электронный кошелек или получить
+        деньги наличными в офисе микрофинансовой организации. Иногда наличные можно заказать с доставкой на дом, но
+        такую услугу предлагают далеко не все МФО.
+      </p>
+      <p class="simple-paragraph">Желающим взять займ на банковскую карту, обязательно понадобится паспорт. Его данные
+        прописываются в анкете. В
+        отдельных случаях могут попросить отправить фотографию страниц паспорта или его скан. Нужно вводить
+        исключительно актуальные паспортные данные (старый документ здесь не подойдет). Как правило, требования МФО к
+        желающему получить кредит, следующие:
+      </p>
+      <ul>
+        <li>Человек обязан быть гражданином Российской Федерации</li>
+        <li>Должен быть зарегистрирован в России по месту своего жительства</li>
+        <li>Быть совершеннолетним и не старше определенного возраста (обычно это 65 лет)</li>
+        <li>Иметь доход, способный перекрыть образовавшуюся задолженность</li>
+      </ul>
+      <p class="simple-paragraph">Процедура оформления займа в микрофинансовой организации происходит следующим
+        образом:</p>
+      <ul>
+        <li>Открываете список предложений. Если не знаете, где их искать, то можете воспользоваться сайтом Банки.ру.
+          Просто указываете необходимые вам параметры и изучаете варианты. Здесь же можете воспользоваться
+          онлайн-калькулятором и оценить выгоду каждого конкретного предложения
+        </li>
+        <li>Указываете необходимую вам сумму и срок кредитования</li>
+        <li>Заполняете заявку. Здесь потребуется прописать свои паспортные, контактные и персональные данные. Также
+          нужно указать платежные реквизиты и информацию о доходах
+        </li>
+        <li>Отправить электронную заявку. Процедура проверки обычно занимает не более 15-20 минут</li>
+        <li>Дождаться положительного решения. Внимательно ознакомьтесь с предложенными условиями</li>
+        <li>Теперь остается согласиться на заключение сделки и получить сумму на счет своей банковской карты</li>
+      </ul>
+      <p class="simple-paragraph">
+        Далее, вы можете распоряжаться средствами так, как считаете нужным. Например, оплачивать покупки, снимать
+        наличные в банкомате, пересылать по другим реквизитам и т.д. МФО не станет отслеживать дальнейшую судьбу
+        средств.
+      </p>
+    </mat-expansion-panel>
   </div>
-</footer>
-<script src="js/swiper-bundle.min.js"></script>
-<script src="js/app.js"></script>
+</section>

@@ -1,77 +1,22 @@
-import {ChangeDetectionStrategy, ChangeDetectorRef, Component} from '@angular/core';
+import {ChangeDetectionStrategy, Component} from '@angular/core';
+import {TableData} from './entities/table-data';
+import {OfferCard} from '../offers/entities/offer-card';
+import {Offers} from '../../services/offers';
 
 @Component({
-  selector: 'app-additional-info',
-  templateUrl: './additional-info.component.html',
-  styleUrls: ['./additional-info.component.scss'],
-    changeDetection: ChangeDetectionStrategy.OnPush,
+  selector: 'app-table-loans',
+  templateUrl: './table-loans.component.html',
+  styleUrls: ['./table-loans.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class AdditionalInfoComponent {
+export class TableLoansComponent {
 
-constructor(private cdRef: ChangeDetectorRef,) {
-}
+  tableData: OfferCard[];
 
-markup = '      <h2>Быстрые займы на карту</h2>\n' +
-  '      <p>\n' +
-  '        Сегодня мы все реже пользуемся наличностью и все чаще банковской карточкой. Расплатиться ей можно практически в\n' +
-  '        любом магазине, развлекательном центре, на автозаправке и в других местах. Однако бывает такое, что денег на\n' +
-  '        карте нет, но в ближайшее время предстоят затраты. Здесь на помощь могут прийти микрофинансовые организации,\n' +
-  '        которые готовы предоставить быстрые займы. Они быстро проверяют ваши персональные данные, и необходимые средства\n' +
-  '        переводятся прямо на карту или выдаются наличными. Это очень удобно, а главное, оперативно.\n' +
-  '      </p>\n' +
-  '      <h3>\n' +
-  '        Займ прямо на карту\n' +
-  '      </h3>\n' +
-  '      <p>На сегодняшний день, такая услуга предоставляется практически всеми микрофинансовыми организациями. Перевод\n' +
-  '        осуществляется на указанную клиентом карту сразу после проверки. Удобство состоит в том, что вам не нужно никуда\n' +
-  '        ехать, ведь оставить заявку и получить средства можно дистанционно через интернет.</p>\n' +
-  '      <h3>Как получить займ на свою банковскую карту?</h3>\n' +
-  '      <p>Для этого достаточно:</p>\n' +
-  '      <ul>\n' +
-  '        <li>Отправить в микрофинансовую организацию соответствующую заявку. Здесь потребуется указать свои паспортные\n' +
-  '          данные, размер необходимого займа, номер банковской карты (куда будет выполнен перевод) и свои контактные\n' +
-  '          данные для обратной связи.\n' +
-  '        </li>\n' +
-  '        <li>Дождаться рассмотрения заявки. Обычно на это уходит не более 10-20 минут.</li>\n' +
-  '        <li>При положительном решении, получить деньги на указанную ранее карту.</li>\n' +
-  '      </ul>\n' +
-  '      <h3>\n' +
-  '        В каких микрофинансовых организациях можно получить займ?\n' +
-  '      </h3>\n' +
-  '      <p>Сегодня наиболее известны:</p>\n' +
-  '      <ul>\n' +
-  '        <li>\n' +
-  '          Займер\n' +
-  '        </li>\n' +
-  '        <li>\n' +
-  '          Деньги на дом\n' +
-  '        </li>\n' +
-  '        <li>\n' +
-  '          Webbankir\n' +
-  '        </li>\n' +
-  '        <li>\n' +
-  '          Займ-Экспресс\n' +
-  '        </li>\n' +
-  '        <li>\n' +
-  '          Лайм-Займ\n' +
-  '        </li>\n' +
-  '        <li>\n' +
-  '          МигКредит\n' +
-  '        </li>\n' +
-  '        <li>\n' +
-  '          MoneyMan\n' +
-  '        </li>\n' +
-  '        <li>\n' +
-  '          Отличные наличные\n' +
-  '        </li>\n' +
-  '        <li>\n' +
-  '          А ДЕНЬГИ и др.\n' +
-  '        </li>\n' +
-  '      </ul>\n' +
-  '      <p>Их преимущества состоят в том, что имеется возможность взять кредит со ставкой от 0% годовых. К тому же, новым клиентам часто предоставляются всевозможные бонусы.</p>\n' +
-  '    '
+  constructor(private offersService: Offers) {
+  }
 
-  checkExpand(event) {
-  this.cdRef.detectChanges();
+  ngOnInit() {
+    this.tableData = this.offersService.getSpecialOffers();
   }
 }

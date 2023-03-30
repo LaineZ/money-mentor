@@ -1,9 +1,9 @@
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'app-micro-loans',
-  templateUrl: './micro-loans.page.html',
-  styleUrls: ['./micro-loans.page.css']
+  selector: 'test',
+  templateUrl: './test.html',
+  styleUrls: ['./test.css']
 })
-export class MicroLoansPage {
+export class Test {
 }

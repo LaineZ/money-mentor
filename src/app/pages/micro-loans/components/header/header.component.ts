@@ -1,12 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-hero-loans',
-  templateUrl: './hero.component.html',
-  styleUrls: ['./hero.component.scss']
+  selector: 'app-header',
+  templateUrl: './header.component.html',
+  styleUrls: ['./header.component.scss']
 })
-export class HeroComponent {
+export class HeaderComponent {
   title = 'money-mentor-project';
-
-  isMoreOffers = false;
 }

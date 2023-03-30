@@ -345,6 +345,24 @@ h1, h2, h3, h4, h5, h6, ul, p {
   padding: 0;
 }
 
+@mixin screen-size($type) {
+  @if $type == 'mobile' {
+    @media only screen and (max-width: 420px) {
+      @content;
+    }
+  } @else if $type == 'tablet' {
+    @media only screen and (min-width: 420px) and (max-width: 768px) {
+      @content;
+    }
+  } @else if $type == 'desktop' {
+    @media only screen and (min-width: 1200px) {
+      @content;
+    }
+  } @else {
+    @error "Invalid screen size type provided. Please provide 'mobile', 'tablet', or 'desktop'";
+  }
+}
+
 .container {
   position: relative;
   max-width: 1690px;
@@ -2520,5 +2538,13 @@ button.swiper-pagination-bullet {
 @media (max-width: 560px) {
   .footer-cookie, .foore-aside, .footer-copyright, .footer-trademark, .footer-policy__link {
     font-size: 12px;
+  }
+}
+
+
+.table-loans {
+
+  @include screen-size('mobile') {
+    display: none;
   }
 }
