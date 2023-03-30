@@ -1,0 +1,41 @@
+.container {
+  position: relative;
+  max-width: 1690px;
+  width: 100%;
+  margin: 100px auto;
+  padding: 0 15px;
+}
+
+.company-title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 53px;
+  -webkit-font-feature-settings: "lnum";
+  font-feature-settings: "lnum";
+  color: #232325;
+  font-family: Raleway, sans-serif;
+}
+
+.company-title span {
+  position: relative;
+}
+
+.company-title span::after {
+  content: "";
+  position: absolute;
+  bottom: -7px;
+  left: 50%;
+  width: 100%;
+  height: 14px;
+  background: url(./img/svg/zaim-line.svg) no-repeat 50% 50%;
+  background-size: contain;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+.company-wrap {
+  margin-bottom: 100px;
+}
