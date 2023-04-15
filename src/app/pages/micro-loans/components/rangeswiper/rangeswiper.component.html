@@ -1,0 +1,32 @@
+<section class="offer">
+  <div class="container">
+    <div class="offer-slider">
+      <ul class="offer-slider__items" id="offer-content">
+        <li class="offer-slider__item offer-card" *ngFor="let offer of offers">
+          <div class="offer-card__header">
+            <div class="offer-card__wrap">
+              <h4 class="offer-card__title">{{offer.name}}</h4>
+              <p class="offer-card__subtitle">Займ под 0%</p>
+            </div>
+            <div class="offer-card__img">
+              <img [src]="offer.shortPicUrl" alt="" srcset="/assets/img/logo-card.png 2x"/>
+            </div>
+          </div>
+          <div class="offer-card__body">
+            <div class="offer-card__col">
+              <p class="offer-card__up">0%</p>
+              <p class="offer-card__do">ставка в день</p>
+            </div>
+            <div class="offer-card__col">
+              <p class="offer-card__up">до {{ offer.maxSumNum }} ₽</p>
+              <p class="offer-card__do">сумма</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="offer-scroller">
+      <input id="offer-range" type="range" min="0" max="100" value="0">
+    </div>
+  </div>
+</section>
