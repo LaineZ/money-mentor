@@ -99,7 +99,7 @@ input[type=number] {
 }
 
 .link-mobile {
-  width: 90%;
+  width: fit-content;
   @include screen-size('tablet') {
     display: none;
   }

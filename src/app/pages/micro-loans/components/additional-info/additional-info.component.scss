@@ -191,8 +191,9 @@ li {
 .container {
   position: relative;
   max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0 15px;
 }
 
