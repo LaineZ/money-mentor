@@ -1,7 +1,6 @@
 .header {
   padding: 10px 20px;
   border-bottom: 1px solid #D8D8D8;
-
 }
 
 .container-header {
@@ -26,6 +25,7 @@
   -ms-flex: 0 0 auto;
   height: 100px;
   background: url('./img/logo.png') no-repeat;
+  background-size: contain;
 }
 
 .header-ico {
@@ -93,5 +93,8 @@
 @media (max-width: 446px) {
   .header-nav {
     width: 80%;
+  }
+  .header-logo {
+    height: 50px;
   }
 }

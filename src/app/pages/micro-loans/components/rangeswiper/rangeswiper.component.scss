@@ -23,7 +23,7 @@ h1, h2, h3, h4, p, a {
 }
 
 .offer {
-  background: #F9F9F9;
+  /* background: #F9F9F9 */;
   margin-bottom: 20px;
 }
 
@@ -45,7 +45,7 @@ input[type=range] {
 .container {
   position: relative;
   max-width: 1690px;
-  width: 97%;
+  width: calc(100% - 10px);
   margin: 0 auto;
   background: #F9F9F9;
 }
