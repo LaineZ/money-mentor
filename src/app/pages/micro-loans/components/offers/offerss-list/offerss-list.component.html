@@ -1,5 +1,6 @@
 <div class="company-wrap company-card__wrap">
+  <app-main-search #mainSearch (loanSumChanged)="onLoanSumChanged($event)"></app-main-search>
   <div>
-    <app-offer-cards [offers]="offers"></app-offer-cards>
+    <app-offer-cards #offerCards [offers]="offers"></app-offer-cards>
   </div>
 </div>

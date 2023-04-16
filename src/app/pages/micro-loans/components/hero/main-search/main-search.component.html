@@ -1,8 +1,8 @@
 <div class="main-search">
   <label class="main-search__label" for="loan-search">
     <p class="label-text">Сумма займа: </p>
-    <input class="main-search__input" type="number" id="loan-search" [(ngModel)]="loanSum">
-    <span  (click)="filerOffersBySumm()"  class="main-search__link link-tablet-desktop">Показать {{ offers.length }} займов</span>
+    <input class="main-search__input" (input)="computeResultsCount()" type="number" id="loan-search" [(ngModel)]="loanSum">
+    <span  (click)="onSearch()"  class="main-search__link link-tablet-desktop">Показать {{ offers.length }} займов</span>
   </label>
-  <span  (click)="filerOffersBySumm()" class="main-search__link link-mobile">Показать {{ offers.length }} займов</span>
+  <span  (click)="onSearch()" class="main-search__link link-mobile">Показать {{ offers.length }} займов</span>
 </div>
