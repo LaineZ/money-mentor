@@ -44,10 +44,9 @@ input[type=range] {
 
 .container {
   position: relative;
-  max-width: 1690px;
-  width: calc(100% - 10px);
+  width: calc(100% - 8px);
   margin: 0 auto;
-  background: #F9F9F9;
+  background: #eceff4;
 }
 
 /* === range commons === */
