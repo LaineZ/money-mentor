@@ -20,7 +20,6 @@
 }
 
 .header-logo {
-  margin-right: auto;
   -webkit-box-flex: 0;
   -ms-flex: 0 0 auto;
   height: 100px;
@@ -96,5 +95,8 @@
   }
   .header-logo {
     height: 50px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
