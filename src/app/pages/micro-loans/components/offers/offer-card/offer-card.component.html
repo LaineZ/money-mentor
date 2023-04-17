@@ -1,7 +1,7 @@
 <div>
   <div>
     <div class="company-cards">
-      <div class="company-card" *ngFor="let offer of firstPortionOffers; let i = index">
+      <div class="company-card" *ngFor="let offer of firstPortionOffers; let i = index" (mouseenter)="hovered[i] = true" (mouseleave)="hovered[i] = false" [ngClass]="needsHovering(i) ? 'hover' : ''">
         <div class="company-card__header">
           <div class="company-card__img">
             <img [src]="offer.shortPicUrl" alt=""/>
@@ -29,7 +29,7 @@
           </div>
         </div>
 
-        <div (click)="changeState(i)" class="company-card__more" [ngClass]="isMobile() ? 'hidden' : 'shown'">
+        <div (click)="changeState(i)" class="company-card__more" [ngClass]="isMobile() ? 'shown' : 'hidden'">
           <div class="more-arrow" [ngClass]="(shown[i] ? 'rotated' : '')"></div>
           <a target="_blank">{{ (shown[i] ? 'Закрыть' : 'Узнать больше') }}</a>
         </div>

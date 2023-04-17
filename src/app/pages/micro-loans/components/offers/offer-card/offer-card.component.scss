@@ -91,25 +91,25 @@ a {
 
 }
 
-.company-card:hover {
+.company-card.hover {
   background: #232325;
 }
 
-.company-card:hover * {
+.company-card.hover * {
   color: #ffffff;
 }
 
-.company-card:hover .company-card__point,
-.company-card:hover .company-card__get {
+.company-card.hover .company-card__point,
+.company-card.hover .company-card__get {
   background: #039BE5;
   /* border: 2px solid #039BE5; */
 }
 
-.company-card:hover .company-card__ico {
+.company-card.hover .company-card__ico {
   fill: #fff;
 }
 
-.company-card:hover .like-ico {
+.company-card.hover .like-ico {
   fill: #039BE5;
 }
 
