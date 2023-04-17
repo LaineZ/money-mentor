@@ -18,7 +18,7 @@ export class MainSearchComponent {
   innerWidth: any;
 
   onSearch(): void {
-    if (this.loanSum) {
+    if (this.loanSum && this.offers.length > 0) {
       this.cdRef.detectChanges();
       this.loanSumChanged.emit(this.loanSum);
     } else {
@@ -31,6 +31,7 @@ export class MainSearchComponent {
       this.offers = this.authenticOffersList.filter(offer => offer.minSumNum <= this.loanSum && offer.maxSumNum >= this.loanSum);
     } else {
       this.offers = this.authenticOffersList;
+      this.loanSumChanged.emit(0);
     }
   }
 
