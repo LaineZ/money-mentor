@@ -32,4 +32,9 @@ export class RangeswiperComponent implements OnInit {
     this.offers = this.offersService.getZeroBifOffers();
   }
 
+
+  openLink(index) {
+    window.open(this.offers[index].offerUrl, '_blank')?.focus();
+  }
+
 }

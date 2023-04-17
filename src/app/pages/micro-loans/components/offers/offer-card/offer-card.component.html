@@ -39,7 +39,7 @@
   <app-monthly-offers class="monthly-offers"></app-monthly-offers>
   <div>
     <div class="company-cards">
-      <div class="company-card" *ngFor="let offer of secondPortionOffers">
+      <div class="company-card" *ngFor="let offer of firstPortionOffers; let i = index" (mouseenter)="hovered[i] = true" (mouseleave)="hovered[i] = false" [ngClass]="needsHovering(i) ? 'hover' : ''">
         <div class="company-card__header">
           <div class="company-card__img">
             <img [src]="offer.shortPicUrl" alt=""/>
@@ -49,7 +49,7 @@
             <p class="company-card__subtitle">Займ онлайн</p>
           </div>
         </div>
-        <div class="company-card__body">
+        <div class="company-card__body" [ngClass]="shown[i] ? 'shown' : 'hidden'">
           <div class="company-card__row">
             <p class="company-card__left">Сумма</p>
             <p class="company-card__right">{{ offer.minSum }} — {{ offer.maxSum }} ₽</p>
@@ -62,14 +62,16 @@
             <p class="company-card__left">Ставка</p>
             <p class="company-card__right">от {{ offer.minBid }}</p>
           </div>
-
+          <div class="company-card__footer">
+            <a [href]="offer.offerUrl" target="_blank" class="company-card__get">Получить деньги</a>
+          </div>
         </div>
 
-        <div class="company-card__footer">
-          <a [href]="offer.offerUrl" target="_blank" class="company-card__get">Получить деньги</a>
+        <div (click)="changeState(i)" class="company-card__more" [ngClass]="isMobile() ? 'shown' : 'hidden'">
+          <div class="more-arrow" [ngClass]="(shown[i] ? 'rotated' : '')"></div>
+          <a target="_blank">{{ (shown[i] ? 'Закрыть' : 'Узнать больше') }}</a>
         </div>
       </div>
-
     </div>
   </div>
 </div>

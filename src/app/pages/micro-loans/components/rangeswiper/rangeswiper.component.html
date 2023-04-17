@@ -2,7 +2,7 @@
   <div class="container">
     <div class="offer-slider">
       <ul class="offer-slider__items" id="offer-content">
-        <li class="offer-slider__item offer-card" *ngFor="let offer of offers">
+        <li class="offer-slider__item offer-card" *ngFor="let offer of offers; let i = index" (click)="openLink(i)">
           <div class="offer-card__header">
             <div class="offer-card__wrap">
               <h4 class="offer-card__title">{{offer.name}}</h4>

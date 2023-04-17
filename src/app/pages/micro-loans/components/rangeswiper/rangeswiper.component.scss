@@ -211,6 +211,8 @@ input[type=range]:disabled::-moz-range-thumb {
   margin-top: 49px;
   margin-bottom: 40px;
   overflow: hidden;
+  background: #ffffff;
+  transition: background 0.3s;
 
   &__items {
     display: -webkit-box;
@@ -240,6 +242,16 @@ input[type=range]:disabled::-moz-range-thumb {
   &__item {
     width: 20%;
   }
+}
+
+.offer-slider__item:hover {
+  background: #232325;
+  transition: color 0.3s, background 0.3s;
+}
+
+.offer-slider__item:hover * {
+  color: #ffffff;
+  transition: color 0.3s, background 0.3s;
 }
 
 
