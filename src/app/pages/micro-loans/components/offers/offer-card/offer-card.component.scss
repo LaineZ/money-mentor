@@ -1,22 +1,33 @@
 @mixin screen-size($type) {
-  @if $type == 'mobile' {
+  @if $type =='mobile' {
     @media only screen and (max-width: 420px) {
       @content;
     }
-  } @else if $type == 'tablet' {
+  }
+
+  @else if $type =='tablet' {
     @media only screen and (min-width: 420px) and (max-width: 768px) {
       @content;
     }
-  } @else if $type == 'desktop' {
+  }
+
+  @else if $type =='desktop' {
     @media only screen and (min-width: 1200px) {
       @content;
     }
-  } @else {
+  }
+
+  @else {
     @error "Invalid screen size type provided. Please provide 'mobile', 'tablet', or 'desktop'";
   }
 }
 
-h1, h2, h3, h4, p, a {
+h1,
+h2,
+h3,
+h4,
+p,
+a {
   font-family: Raleway, sans-serif;
   margin: 0;
   padding: 0;
@@ -56,8 +67,7 @@ h1, h2, h3, h4, p, a {
   width: 100%;
 }
 
-.company-card:not(:last-child) {
-}
+.company-card:not(:last-child) {}
 
 .company-card {
   max-width: 315px;
@@ -89,7 +99,8 @@ h1, h2, h3, h4, p, a {
   color: #ffffff;
 }
 
-.company-card:hover .company-card__point, .company-card:hover .company-card__get {
+.company-card:hover .company-card__point,
+.company-card:hover .company-card__get {
   background: #039BE5;
   /* border: 2px solid #039BE5; */
 }
@@ -117,17 +128,7 @@ h1, h2, h3, h4, p, a {
   -ms-flex-align: center;
   align-items: center;
   position: relative;
-  margin-bottom: 60px;
-}
-
-.company-card__header::after {
-  content: "";
-  position: absolute;
-  bottom: -30px;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background: #D8D8D8;
+  margin-bottom: 20px;
 }
 
 .company-card__img {
@@ -174,7 +175,43 @@ h1, h2, h3, h4, p, a {
 }
 
 .company-card__body {
-  margin-bottom: 42px;
+  border-top: 1px solid #D8D8D8;
+  padding-top: 30px;
+  height: 200px;
+  overflow: hidden;
+  transition: height 0.2s;
+}
+
+.company-card__body.hidden {
+  border-top: 0px;
+  height: 0px;
+  padding-top: 0px;
+  transition: height 0.2s;
+}
+
+.company-card__more {
+  display: flex;
+
+  a {
+    margin-top: 6px;
+    text-decoration: underline;
+  }
+}
+
+.company-card__more.hidden {
+  display: none;
+}
+
+.more-arrow {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+  background-image: url(./img/svg/arrow-more.svg);
+}
+
+.more-arrow.rotated {
+  transform: rotate(180deg);
+  background-image: url(./img/svg/arrow-more-collapse.svg);
 }
 
 .company-card__row {

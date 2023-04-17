@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, ChangeDetectorRef, Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
+import { ChangeDetectionStrategy, ChangeDetectorRef, Component, HostListener, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { OfferCard } from '../entities/offer-card';
 
 @Component({
@@ -8,19 +8,38 @@ import { OfferCard } from '../entities/offer-card';
 })
 export class OfferCardComponent implements OnInit, OnChanges {
   title = 'money-mentor-project';
+  shown: boolean[] = [];
 
   @Input() offers: OfferCard[];
   firstPortionOffers: OfferCard[];
   secondPortionOffers: OfferCard[];
+  innerWidth: number
 
   constructor(private cdRef: ChangeDetectorRef) {
 
+  }
+
+  isMobile() {
+    return this.innerWidth > 500;
+  }
+
+  recomputeSize() {
+    for (let index = 0; index < this.shown.length; index++) {
+      this.shown[index] = this.isMobile();
+    }
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
+    this.innerWidth = window.innerWidth;
+    this.recomputeSize();
   }
 
   ngOnChanges(changes: SimpleChanges) {
     if (changes['offers']) {
       this.firstPortionOffers = changes['offers'].currentValue.slice(0, 9);
       this.secondPortionOffers = changes['offers'].currentValue.slice(9);
+      this.shown = new Array(this.offers.length).fill(true);
       this.cdRef.detectChanges();
     }
   }
@@ -28,5 +47,11 @@ export class OfferCardComponent implements OnInit, OnChanges {
   ngOnInit() {
     this.firstPortionOffers = this.offers.slice(0, 9);
     this.secondPortionOffers = this.offers.slice(9);
+    this.innerWidth = window.innerWidth;
+    this.recomputeSize();
+  }
+
+  changeState(idx: number) {
+    this.shown[idx] = !this.shown[idx];
   }
 }
