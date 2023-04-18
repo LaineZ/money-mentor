@@ -25,6 +25,13 @@ export class RangeswiperComponent implements OnInit {
         let pct = (oPanel.scrollLeft / tot) * 100;
         oRange.value = String(pct);
       });
+
+      // workaround for iOS
+      oPanel.addEventListener('touchmove', () => {
+        let tot = oPanel.scrollWidth - oPanel.offsetWidth;
+        let pct = (oPanel.scrollLeft / tot) * 100;
+        oRange.value = String(pct);
+      });
     })
   }
 
