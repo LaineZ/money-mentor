@@ -8,6 +8,7 @@ import {OfferCard} from '../offers/entities/offer-card';
   styleUrls: ['./rangeswiper.component.scss']
 })
 
+
 export class RangeswiperComponent implements OnInit {
   offers: OfferCard[];
 
@@ -26,12 +27,17 @@ export class RangeswiperComponent implements OnInit {
         oRange.value = String(pct);
       });
 
-      // workaround for iOS
-      oPanel.addEventListener('touchmove', () => {
-        let tot = oPanel.scrollWidth - oPanel.offsetWidth;
-        let pct = (oPanel.scrollLeft / tot) * 100;
-        oRange.value = String(pct);
-      });
+      var styleElement = document.createElement("style");
+
+      if (this.iCheck()) {
+        styleElement.appendChild(document.createTextNode("div ::-webkit-scrollbar { display: auto }"));
+        oPanel.appendChild(styleElement);	
+        oRange.style.display = "none";
+      } else {
+        styleElement.appendChild(document.createTextNode("div ::-webkit-scrollbar { display: none }"));
+        oPanel.appendChild(styleElement);	
+        oRange.style.display = "block";
+      }
     })
   }
 
@@ -39,6 +45,11 @@ export class RangeswiperComponent implements OnInit {
     this.offers = this.offersService.getZeroBifOffers();
   }
 
+
+  iCheck(): boolean {
+    var userAgent = navigator.userAgent || navigator.vendor;
+    return (/iPad|iPhone|iPod/.test(userAgent));
+  }
 
   openLink(index) {
     window.open(this.offers[index].offerUrl, '_blank')?.focus();
