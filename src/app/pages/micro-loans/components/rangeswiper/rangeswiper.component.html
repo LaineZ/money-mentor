@@ -25,7 +25,7 @@
         </li>
       </ul>
     </div>
-    <div class="offer-scroller">
+    <div [hidden]="iCheck()" class="offer-scroller">
       <input id="offer-range" type="range" min="0" max="100" value="0">
     </div>
   </div>

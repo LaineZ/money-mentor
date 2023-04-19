@@ -16,6 +16,7 @@ export class RangeswiperComponent implements OnInit {
     window.addEventListener('load', e => {
       var oRange = (document.getElementById('offer-range') as HTMLInputElement)
       var oPanel = (document.getElementById('offer-content') as HTMLInputElement);
+
       oRange.addEventListener('input', () => {
         let tot = oPanel.scrollWidth - oPanel.offsetWidth;
         let pct = (tot * Number(oRange.value)) / 100;
@@ -31,12 +32,10 @@ export class RangeswiperComponent implements OnInit {
 
       if (this.iCheck()) {
         styleElement.appendChild(document.createTextNode("div ::-webkit-scrollbar { display: auto }"));
-        oPanel.appendChild(styleElement);	
-        oRange.style.display = "none";
+        oPanel.appendChild(styleElement);
       } else {
         styleElement.appendChild(document.createTextNode("div ::-webkit-scrollbar { display: none }"));
         oPanel.appendChild(styleElement);	
-        oRange.style.display = "block";
       }
     })
   }
